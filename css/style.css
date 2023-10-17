@@ -1,11 +1,22 @@
 @font-face {
-  font-family: 'CustomFont';
-  src: url('/path/to/mycustomfont.woff2') format('woff2'),
-       url('/path/to/mycustomfont.woff') format('woff');
+  font-family: 'Poppins-Medium';
+  src: url('../fonts/Poppins-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-body {
-  font-family: 'CustomFont', sans-serif;
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {  
+  font-family: 'Poppins-Light', sans-serif;
+  background-color: rgb(235, 235, 235);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins-Medium', sans-serif;
 }
