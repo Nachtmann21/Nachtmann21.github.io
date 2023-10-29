@@ -14,9 +14,33 @@
 
 body {  
   font-family: 'Poppins-Light', sans-serif;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(233, 233, 233);
 }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Poppins-Medium', sans-serif;
+}
+
+#main-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#container-sm {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+#container-team {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-week {
+  background-color: #d4d4d4; 
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0 20px 0;
 }
