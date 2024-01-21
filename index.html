@@ -374,7 +374,6 @@
         <li>do dokumentácie pridať návrh UI</li>
         <li>do dokumentácie pridať špecifikáciu => ako by projekt mal vyzerať/čo je cieľ projektu/čo má projekt obsahovať/prehľad, čo má projekt obsahovať</li>
         <li>do dokumentácie pridať konkurenčné riešenia</li>
-        <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
         <li>keď chat nevie odpovedať, namiesto erroru odpovie, že danú súčiastku nevie vyhľadať</li>
         <li>skontrolovať, či sú správne nastavené headers</li>
         <li>vyhľadávať v JSON len na základe key</li>
@@ -408,7 +407,77 @@
         <li>do dokumentácie pridať špecifikáciu => ako by projekt mal vyzerať/čo je cieľ projektu/čo má projekt obsahovať/prehľad, čo má projekt obsahovať</li>
         <li>do dokumentácie pridať konkurenčné riešenia</li>
         <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
-      </ul>      
+      </ul>
+    </div>
+
+    <div class="container-week">
+      <h2>Týždeň 12 (5.12.2023)</h2>
+      <h3>Osobné stretnutie</h3>
+      <ul>
+        <li>Zúčastnili sa:</li>
+        <ul>
+          <li>Adam Kučmín</li>
+          <li>Simona Zlatohlávková</li>
+          <li>Dagmar Trabalíková</li>
+          <li>Martin Nachtmann</li>
+          <li>Miroslav Sáraz</li>
+          <li>Marián Lekavý</li>
+        </ul>
+        <li>vaedúcemu práce sme odprezentovali splnené úlohy za posledný týždeň</li>
+        <li>prekonzultovali sme, prečo má extraction service poznať štruktúru databázy</li>
+        <li>vedúci práce preferuje, keby sme pouzili mapu atribútov namiesto cases</li>
+        <li>rýchlosť programu vyhovuje požiadavkam</li>
+        <li>počas testovania programu sme objavili niekoľko nedostatkov, ktoré treba upraviť</li>
+        <li></li>
+      </ul>
+      <h4>Práca do budúcna</h4>
+      <ul>
+        <li>pridať do logov vyextrahovane atributy (JSON)</li>
+        <li>pridať response gpt v prípade, že sa komponent nenájde</li>
+        <li>keď je viac requestov v 1 session, treba prepísať values parametra (key sa prepísal správne)</li>
+        <li>skontrolovať atribúty, ktoré posielame gpt (nemá obsahovať napr. status)</li>
+        <li>zatiaľ pridať Zener ako synonymum k Zener diode</li>
+        <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
+        <li>možné riešenie vyhľadávania je raz prejsť db. presne, ak nenájde match, prejsť s contains</li>
+        <li>vyskúšat dať gpt na výber hľadať z komponentov z onsemi db</li>
+        <li>optimalizovať dĺžku odpovede api aby zbytočne nevyčerpal zdroje</li>
+      </ul>
+      <h4>Na dokončenie projektu treba</h4>
+      <ul>
+        <li>Vyriešiť response gpt v prípade nenájdenej súčistky v databáze</li>
+        <li>bočný panel - úprava requestu</li>
+        <li>rozšíriť synonymický slovník</li>
+        <li>v power supplies sú topológie, tie treba pridať do synoným</li>        
+        <li>vytvoriť testovacie requesty</li>
+        <li>namiesto odpovede "component not found" - niečo ako "neviem čo je xy, skúste upresniť"</li>
+        <li>v prípade že nepozná xy, odpovedať v takom formáte, aký zadal používateľ</li>
+        <li>pri PIM je dropbox, z toho treba dať do synoným s tým, že tam musí byť aj modul (napr. mosfet modul)</li>
+        <li>to isté pri IPM, len tam nemá byť modul</li>
+        <li>pridať filtre na minimum a maximum hodnoty</li>
+      </ul>
+    </div>
+
+    <div class="container-week">
+      <h2>Stretnutie 13 (5.12.2023)</h2>
+      <h3>Osobné stretnutie</h3>
+      <ul>
+        <li>Zúčastnili sa:</li>
+        <ul>
+          <li>Adam Kučmín</li>
+          <li>Simona Zlatohlávková</li>
+          <li>Dagmar Trabalíková</li>
+          <li>Martin Nachtmann</li>
+          <li>Miroslav Sáraz</li>
+          <li>Marián Lekavý</li>
+        </ul>
+      </ul>
+      <li>Experimentovanie a vylepšovanie</li>
+      <h4>Na dokončenie projektu treba</h4>
+      <ul>
+        <li>pridať filtre minimum, maximum čo umoznuje spravne fungovanie programu</li>
+        <li>porovnanie úspešnosti oproti starému stavu</li>
+        <li>Martin zorganizuje stretnutie/call v tyzdni od 08.01.2024</li>
+      </ul>
     </div>
   </div>
 
