@@ -11,9 +11,15 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h2">Tímový projekt 1</span>
+      <div>
+        <button class="btn btn-outline-light" onclick="document.getElementById('semester1').scrollIntoView()">Semester
+          1</button>
+        <button class="btn btn-outline-light" onclick="document.getElementById('semester2').scrollIntoView()">Semester
+          2</button>
+      </div>
     </div>
   </nav>
 
@@ -27,7 +33,6 @@
           </button>
         </div>
         <div class="modal-body">
-          <!-- Add the image element -->
           <img id="recipient-image" src="" alt="Recipient's Picture" class="img-fluid">
         </div>
       </div>
@@ -68,72 +73,189 @@
       </div>
     </div>
 
-    <div class="container-week">
-      <h2>Týždeň 1</h2>
-      <ul>
-        <li>Výber témy</li>
-        <li>Súracovanie a zaslanie ponuky zadávatelovi témy</li>
-      </ul>
-    </div>
-
-    <div class="container-week">
-      <h2>Týždeň 2 (29.9.2023)</h2>
-      <h3>Online stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
+    <div>
+      <h1 id="semester1">Semester 1</h1>
+      <div class="container-week">
+        <h2>Týždeň 1</h2>
         <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
+          <li>Výber témy</li>
+          <li>Súracovanie a zaslanie ponuky zadávatelovi témy</li>
         </ul>
-        <li>vytvoriť backlog</li>
-        <ul>
-          <li>vytvoriť GitHub repozitár(6.10.2023)</li>
-          <li>vytvoriť dokumentáciu</li>
-          <li>vytvoriť webstránku</li>
-          <li>vytvoriť databázu z onsemi webstránky(10.10.2023)</li>
-          <li>výber GPT algoritmu (6.10.2023)</li>
-          <li>pridať licenciu do projektu</li>
-          <li>vytvoriť základnú dokumentáciu pre tímový projekt</li>
-          <li>vytvoriť základný náčrt UI</li>
-        </ul>
-      </ul>
-    </div>
+      </div>
 
-    <div class="container-week">
-      <h2>Týždeň 3 (6.10.2023)</h2>
-      <h3>Online stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
+      <div class="container-week">
+        <h2>Týždeň 2 (29.9.2023)</h2>
+        <h3>Online stretnutie</h3>
         <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+          <li>vytvoriť backlog</li>
+          <ul>
+            <li>vytvoriť GitHub repozitár(6.10.2023)</li>
+            <li>vytvoriť dokumentáciu</li>
+            <li>vytvoriť webstránku</li>
+            <li>vytvoriť databázu z onsemi webstránky(10.10.2023)</li>
+            <li>výber GPT algoritmu (6.10.2023)</li>
+            <li>pridať licenciu do projektu</li>
+            <li>vytvoriť základnú dokumentáciu pre tímový projekt</li>
+            <li>vytvoriť základný náčrt UI</li>
+          </ul>
         </ul>
-        <li>research GPT algoritmov a alternatív (Nachtmann)</li>
-        <li>následný výber OpenAI na riešenie projektu</li>
-        <li>prekonzultovanie možného postupu práce s OpenAI</li>
-        <li>vedúci práce vysvetlil kde a ako sa na stránke onsemi dostaneme k dátam z databázy, s ktorými budeme
-          pracovať</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>vytvorenie projektu na Githube(10.10.2023)</li>
-        <li>pridanie členov do GitHub repozitára(10.10.2023)</li>
-        <li>začať pracovať na pridávaní tabuliek do databázy(10.10.2023)</li>
-        <li>vytvorenie webstránky projektu(10.10.2023)</li>
-      </ul>
-    </div>
+      </div>
 
-    <div class="container-week">
-      <h2>Týždeň 4 (10.10.2023)</h2>
-      <div>
+      <div class="container-week">
+        <h2>Týždeň 3 (6.10.2023)</h2>
+        <h3>Online stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+          <li>research GPT algoritmov a alternatív (Nachtmann)</li>
+          <li>následný výber OpenAI na riešenie projektu</li>
+          <li>prekonzultovanie možného postupu práce s OpenAI</li>
+          <li>vedúci práce vysvetlil kde a ako sa na stránke onsemi dostaneme k dátam z databázy, s ktorými budeme
+            pracovať</li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>vytvorenie projektu na Githube(10.10.2023)</li>
+          <li>pridanie členov do GitHub repozitára(10.10.2023)</li>
+          <li>začať pracovať na pridávaní tabuliek do databázy(10.10.2023)</li>
+          <li>vytvorenie webstránky projektu(10.10.2023)</li>
+        </ul>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 4 (10.10.2023)</h2>
+        <div>
+          <h3>Osobné stretnutie</h3>
+          <ul>
+            <li>Zúčastnili sa:</li>
+            <ul>
+              <li>Adam Kučmín</li>
+              <li>Simona Zlatohlávková</li>
+              <li>Dagmar Trabalíková</li>
+              <li>Martin Nachtmann</li>
+              <li>Miroslav Sáraz</li>
+              <li>Marián Lekavý</li>
+            </ul>
+            <li>vytvorenie projektu na GitHubee (Zlatohlávková)</li>
+            <ul>
+              <li>samostatné moduly pre backend a frontend</li>
+            </ul>
+            </li>
+            <li>pridanie členov do GitHub repozitára</li>
+            <li>vytvorenie databázy (Kučmín)</li>
+            <li>pridávanie tabuliek z CSV z onsemi stránky (Saraz, Trabalíková)</li>
+            <li>vytvorenie základnej dokumentácie pre tímový projekt</li>
+            <li>vytvorený klient na pripojenie k OpenAI API</li>
+            <li>čiastočné extrahovanie parametrov z dopytu od GPT</li>
+            <li>prvotné testovanie logiky programu</li>
+            <li>diagram toku údajov</li>
+            <li>prvý náčrt UI</li>
+            <li>zisťovanie, ako GPT ukladá session pri requestoch, ako pokračovať v rovnakej session</li>
+            <li>na synonymá bude použité mapovanie</li>
+            <li>vytvorenie webstránky (Nachtmann)</li>
+          </ul>
+          <h4>Práca do budúcna</h4>
+          <ul>
+            <li>predvedenie práce na frontende a backende a získanie spätnej väzby od vedúceho(17.10.2023)</li>
+          </ul>
+          <h4>Dokumenty</h4>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            data-whatever="Diagram1">Diagram 1</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            data-whatever="Diagram2">Diagram 2</button>
+        </div>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 5 (17.10.2023)</h2>
+        <div>
+          <h3>Osobné stretnutie</h3>
+          <ul>
+            <li>Zúčastnili sa:</li>
+            <ul>
+              <li>Adam Kučmín</li>
+              <li>Simona Zlatohlávková</li>
+              <li>Dagmar Trabalíková</li>
+              <li>Martin Nachtmann</li>
+              <li>Miroslav Sáraz</li>
+              <li>Marián Lekavý</li>
+            </ul>
+            <li>predvedenie splnenej práce na frontende</li>
+            <li>vedúci projektu pochválil voľbu farebnej schémy frontendu</li>
+            <li>detailne sme preštudovali podmienky na úspešné splnenie zadania TP1</li>
+            <li>predvedenie simulačného nástroja súčiastok na stránke onsemi</li>
+            <li>je potrebné ukazovať OPN v prvom priblížení</li>
+            <li>členovia chýbajúci na stretnutí sa budú pripájať cez online meeting</li>
+            <li>členovia chýbajúci na stretnutí spíšu svoj progress aby sa bez nich tím nezasekol</li>
+            <li>vedúci načrtol diagram v ktorom znáorňuje približný flow dát v systéme</li>
+            <li>vedúci načrtol diagram detailnejší flow dát v systéme</li>
+            <li>vedúci požaduje komponenty naprogramovať separátne, aby sa dali znova použiť</li>
+            <li>vedúci projektu vyžaduje stručnejšie vyjadrovanie sa v písanom texte</li>
+            <li>vedúci načrtol ako funguje iný projekt v onsemi súvisiaci s našim projektom,
+              ktorý funguje cez embeddings</li>
+            <li>vedúci vysvetlil širší kontext nášho projektu a znázornil ako sa v budúcnosti projekt plánuje integrovať
+              do systému</li>
+          </ul>
+          <h4>Práca do budúcna</h4>
+          <ul>
+            <li>vytvorenie teams meetingu pre členov neprítomných na stretnutí osobne</li>
+            <li>pridanie licencie do dokumentácie (24.10.2023)</li>
+            <li>vytvorenie teams meetingu (24.10.2023)</li>
+            <li>predviest live demo (24.10.2023)</li>
+            <li>náčrty odfotené a pridané do dokumentácie (24.10.2023)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 6 (24.10.2023)</h2>
+        <h3>Online stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+          <li>frontend je pripojený na backend</li>
+          <li>backend hádže error, lebo ešte nie sú dorobené synonymá a entitné triedy</li>
+          <li>pracuje sa na synonym-managerovi</li>
+          <li>vedúcemu bolo cez online hovor zazdielané ako bude vyzerat synonym manager</li>
+          <li>nákres dataflowu v momentálnom riešení projektu</li>
+          <li>priradenie práce členom tímu v načrtnutom diagrame</li>
+          <li>prekonzultovanie licencie projektu</li>
+          <li>pridanie členov do novej MSTeams skupiny</li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>spojazdnit synonymá a entitné triedy, spojazdniť backend bez errorov(31.10.2023)</li>
+          <li>dostať sa do bodu funkčného riešenia(31.10.2023)</li>
+          <li>prekresliť dataflow v riadnom programe(31.10.2023)</li>
+          <li>do licencie pridať všetky mená členov tímu(31.10.2023)</li>
+        </ul>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 7 (31.10.2023)</h2>
         <h3>Osobné stretnutie</h3>
         <ul>
           <li>Zúčastnili sa:</li>
@@ -145,39 +267,37 @@
             <li>Miroslav Sáraz</li>
             <li>Marián Lekavý</li>
           </ul>
-          <li>vytvorenie projektu na GitHubee (Zlatohlávková)</li>
-          <ul>
-            <li>samostatné moduly pre backend a frontend</li>
-          </ul>
-          </li>
-          <li>pridanie členov do GitHub repozitára</li>
-          <li>vytvorenie databázy (Kučmín)</li>
-          <li>pridávanie tabuliek z CSV z onsemi stránky (Saraz, Trabalíková)</li>
-          <li>vytvorenie základnej dokumentácie pre tímový projekt</li>
-          <li>vytvorený klient na pripojenie k OpenAI API</li>
-          <li>čiastočné extrahovanie parametrov z dopytu od GPT</li>
-          <li>prvotné testovanie logiky programu</li>
-          <li>diagram toku údajov</li>
-          <li>prvý náčrt UI</li>
-          <li>zisťovanie, ako GPT ukladá session pri requestoch, ako pokračovať v rovnakej session</li>
-          <li>na synonymá bude použité mapovanie</li>
-          <li>vytvorenie webstránky (Nachtmann)</li>
+          <li>vedúcemu práce bola odprezentovaná práca za posledný týždeň</li>
+          <li>vedúci práce otestoval fungovanie programu cez frontendovú aplikáciu</li>
+          <li>boli dokončené entitné triedy pre všetky typy súčiastok</li>
+          <li>bol dokončený zoznam synoným pre súčiastky</li>
+          <li>bol prepojený frontend a backend</li>
+          <li>potrebná úprava aby sa dali vyhladávať parametre napr. "menšie ako", a nie len presné hodnoty</li>
+          <li>nastal problém, keď OpenAI vracia error 503</li>
+          <li>nastal problém, keď OpenAI vracia error 429, too many reQuests</li>
+          <li>namiesto image sensoru sme v odpovedi dostali IGBT, nakoľko nenašiel image sensor</li>
         </ul>
         <h4>Práca do budúcna</h4>
         <ul>
-          <li>predvedenie práce na frontende a backende a získanie spätnej väzby od vedúceho(17.10.2023)</li>
+          <li>audio amplifier nemá OPN, tabuľku bude treba odstrániť (7.11.2023)</li>
+          <li>namiesto ID co tam mame teraz, spravit to tak, aby vypisoval OPN cisla z DB</li>
+          <li>treba spravit logovanie aspon aby bolo vidiet ci spravne naparsoval product type a zadane atributy</li>
+          <li>vedúci práce doporučil neparsovať dáta do JSONu, ale priamo nechať openAI odpovedať JSONom (7.11.2023)
+          </li>
+          <li>vedúci práce chce namiesto default odpovede IGBT dostať v odpovedi správu o nenájdení súčiastky</li>
+          <li>pridat dokumentaciu na stranku (7.11.2023)</li>
+          <li>pridat link na repozitar na stranku (7.11.2023)</li>
+          <li>pridat obrazky na stranku (7.11.2023)</li>
+          <li>bude treba opraviť to, aby druhý request na openAI api netrval moc dlho</li>
+          <li>rozdelit funkciu getResponse v GPTServiceImpl na viac casti aby nebola tak komplikovana</li>
         </ul>
         <h4>Dokumenty</h4>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-          data-whatever="Diagram1">Diagram 1</button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-          data-whatever="Diagram2">Diagram 2</button>
+          data-whatever="Parsovanie Do JSON">Parsovanie Do JSON</button>
       </div>
-    </div>
 
-    <div class="container-week">
-      <h2>Týždeň 5 (17.10.2023)</h2>
-      <div>
+      <div class="container-week">
+        <h2>Týždeň 8 (7.11.2023)</h2>
         <h3>Osobné stretnutie</h3>
         <ul>
           <li>Zúčastnili sa:</li>
@@ -189,66 +309,227 @@
             <li>Miroslav Sáraz</li>
             <li>Marián Lekavý</li>
           </ul>
-          <li>predvedenie splnenej práce na frontende</li>
-          <li>vedúci projektu pochválil voľbu farebnej schémy frontendu</li>
-          <li>detailne sme preštudovali podmienky na úspešné splnenie zadania TP1</li>
-          <li>predvedenie simulačného nástroja súčiastok na stránke onsemi</li>
-          <li>je potrebné ukazovať OPN v prvom priblížení</li>
-          <li>členovia chýbajúci na stretnutí sa budú pripájať cez online meeting</li>
-          <li>členovia chýbajúci na stretnutí spíšu svoj progress aby sa bez nich tím nezasekol</li>
-          <li>vedúci načrtol diagram v ktorom znáorňuje približný flow dát v systéme</li>
-          <li>vedúci načrtol diagram detailnejší flow dát v systéme</li>
-          <li>vedúci požaduje komponenty naprogramovať separátne, aby sa dali znova použiť</li>
-          <li>vedúci projektu vyžaduje stručnejšie vyjadrovanie sa v písanom texte</li>
-          <li>vedúci načrtol ako funguje iný projekt v onsemi súvisiaci s našim projektom,
-            ktorý funguje cez embeddings</li>
-          <li>vedúci vysvetlil širší kontext nášho projektu a znázornil ako sa v budúcnosti projekt plánuje integrovať
-            do systému</li>
+          <li>bola odprezentovaná splnená práca za posledný týždeň</li>
+          <li>napr. pri filtri 5mpx by sme mohli vyhladávať 5 a viac mpx, nie menej</li>
+          <li>daľšia možnosť je zadať min hodnotu</li>
+          <li>odprezentovali sme ako program vyhľadáva v databáze</li>
+          <li>vedúci práce otestoval fungovanie programu cez frontendovú aplikáciu</li>
+          <li>číselné hodnoty treba vyhľadávať podľa databázy a nie podľa response od GPT</li>
         </ul>
         <h4>Práca do budúcna</h4>
         <ul>
-          <li>vytvorenie teams meetingu pre členov neprítomných na stretnutí osobne</li>
-          <li>pridanie licencie do dokumentácie (24.10.2023)</li>
-          <li>vytvorenie teams meetingu (24.10.2023)</li>
-          <li>predviest live demo (24.10.2023)</li>
-          <li>náčrty odfotené a pridané do dokumentácie (24.10.2023)</li>
+          <li>zistiť, či GPT-4 by nedokázal lepšie generovať JSON z requestu</li>
+          <li>zistiť, či GPT-4 je cenovo dostupná alternatíva</li>
+          <li>doplniť synonimický slovník aj pre atribút sic (silicone carbide) (21.11.2023)</li>
+          <li>opraviť bugy zistené pri testovaní aplikácie</li>
+          <li>upraviť funkciu getAttributesAsString() (21.11.2023)</li>
+          <li>pridať sa webstránku testovací JSON zo stretnutia (21.11.2023)</li>
+          <li>vytvoriť unit testy</li>
+        </ul>
+        <h4>Dokumenty</h4>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          data-whatever="JSON">Príklad JSON</button>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 9 (14.11.2023)</h2>
+        <h3>Osobné stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+          </ul>
+          <li>spravené synonymá pre silicone carbide</li>
+          <li>na stretnutí sme spustili a otestovali demo programu</li>
+          <li>openai api občas stále vráti error 502</li>
+          <li>zistili sme, že gpt-4-1106 by dokázal rýchlejšie a konzistentnejšie odpovedať JSONom vďaka funkcionalite
+            json response</li>
+          <li>pri pokuse o update na gtp-4-1106 nastal problém s API kľúčom</li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>pre správne fungovanie gpt-4-1106 bude pravdepodobne potrebné od vedúceho práce vyžiadať nový api kľúč
+          </li>
+          <li>pre vyriešenie tohto problému je treba urobiť ďalší výskum</li>
+          <li>rozdelenie backendu na jednotlivé moduly (21.11.2023)</li>
+        </ul>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 10 (21.11.2023)</h2>
+        <h3>Osobné stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+          <li>vedúcemu práce bola odprezentovaná situácia s upgradom na gpt-4-1106, bol vyžiadaný nový api key</li>
+          <li>od vedúceho práce sme vyžiadali zoznam slov potrebných do synonymického slovníka, splniť to je však z
+            časového hľadiska zatiaľ nereálne</li>
+          <li>vedúcemu práce bolo odprezentované, ako je backend rozdelený na moduly</li>
+          <li>vedúcemu práce bola odprezentovaná práca na dokumentácií k projektu</li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>meno tabuľky by sa nemalo extrahovať v extractionservice, ale v querryservice</li>
+          <li>upraviť kontext gpt/request, podľa toho, čo bude lepšie</li>
+          <li>do dokumentácie pridať návrh UI</li>
+          <li>do dokumentácie pridať špecifikáciu => ako by projekt mal vyzerať/čo je cieľ projektu/čo má projekt
+            obsahovať/prehľad, čo má projekt obsahovať</li>
+          <li>do dokumentácie pridať konkurenčné riešenia</li>
+          <li>keď chat nevie odpovedať, namiesto erroru odpovie, že danú súčiastku nevie vyhľadať</li>
+          <li>skontrolovať, či sú správne nastavené headers</li>
+          <li>vyhľadávať v JSON len na základe key</li>
+          <li>vyiešiť odsekávanie sql</li>
+        </ul>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 11 (28.11.2023)</h2>
+        <h3>Osobné stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+          </ul>
+          <li>upravený kontext gpt</li>
+          <li>pracuje sa na odsekávaní sql</li>
+          <li>pri exception sa vypíše, že sa daná súčiastka nedá vyhľadať</li>
+          <li>GPT verzia updated na GPT 4 turbo</li>
+          <li>GPT využíva JSON mode pre lepšie štrukturovaný output, negeneruje zbytočný text</li>
+          <li>lepší výkon GPT 4 v porovnaní s GPT 3.5</li>
+          <li>meno tabuľky sa extrahuje naraz s menom komponentu, treba prekonzultovať s vedúcim projektu</li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>do dokumentácie pridať návrh UI</li>
+          <li>do dokumentácie pridať špecifikáciu => ako by projekt mal vyzerať/čo je cieľ projektu/čo má projekt
+            obsahovať/prehľad, čo má projekt obsahovať</li>
+          <li>do dokumentácie pridať konkurenčné riešenia</li>
+          <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
+        </ul>
+      </div>
+
+      <div class="container-week">
+        <h2>Týždeň 12 (5.12.2023)</h2>
+        <h3>Osobné stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+          <li>vedúcemu práce sme odprezentovali splnené úlohy za posledný týždeň</li>
+          <li>prekonzultovali sme, prečo má extraction service poznať štruktúru databázy</li>
+          <li>vedúci práce preferuje, keby sme pouzili mapu atribútov namiesto cases</li>
+          <li>rýchlosť programu vyhovuje požiadavkam</li>
+          <li>počas testovania programu sme objavili niekoľko nedostatkov, ktoré treba upraviť</li>
+          <li></li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>pridať do logov vyextrahovane atributy (JSON)</li>
+          <li>pridať response gpt v prípade, že sa komponent nenájde</li>
+          <li>keď je viac requestov v 1 session, treba prepísať values parametra (key sa prepísal správne)</li>
+          <li>skontrolovať atribúty, ktoré posielame gpt (nemá obsahovať napr. status)</li>
+          <li>zatiaľ pridať Zener ako synonymum k Zener diode</li>
+          <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
+          <li>možné riešenie vyhľadávania je raz prejsť db. presne, ak nenájde match, prejsť s contains</li>
+          <li>vyskúšat dať gpt na výber hľadať z komponentov z onsemi db</li>
+          <li>optimalizovať dĺžku odpovede api aby zbytočne nevyčerpal zdroje</li>
+        </ul>
+        <h4>Na dokončenie projektu treba</h4>
+        <ul>
+          <li>Vyriešiť response gpt v prípade nenájdenej súčistky v databáze</li>
+          <li>bočný panel - úprava requestu</li>
+          <li>rozšíriť synonymický slovník</li>
+          <li>v power supplies sú topológie, tie treba pridať do synoným</li>
+          <li>vytvoriť testovacie requesty</li>
+          <li>namiesto odpovede "component not found" - niečo ako "neviem čo je xy, skúste upresniť"</li>
+          <li>v prípade že nepozná xy, odpovedať v takom formáte, aký zadal používateľ</li>
+          <li>pri PIM je dropbox, z toho treba dať do synoným s tým, že tam musí byť aj modul (napr. mosfet modul)</li>
+          <li>to isté pri IPM, len tam nemá byť modul</li>
+          <li>pridať filtre na minimum a maximum hodnoty</li>
+        </ul>
+      </div>
+
+      <div class="container-week">
+        <h2>Stretnutie 13 (5.12.2023)</h2>
+        <h3>Osobné stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+        </ul>
+        <li>Experimentovanie a vylepšovanie</li>
+        <h4>Na dokončenie projektu treba</h4>
+        <ul>
+          <li>pridať filtre minimum, maximum čo umožňuje správne fungovanie programu</li>
+          <li>porovnanie úspešnosti oproti starému stavu</li>
+          <li>Martin zorganizuje stretnutie/call v tyzdni od 08.01.2024</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <h1 id="semester2">Semester 2</h1>
+
+      <div class="container-week">
+        <h2>Stretnutie 1 (15.2.2024)</h2>
+        <h3>Osobné stretnutie</h3>
+        <ul>
+          <li>Zúčastnili sa:</li>
+          <ul>
+            <li>Adam Kučmín</li>
+            <li>Simona Zlatohlávková</li>
+            <li>Dagmar Trabalíková</li>
+            <li>Martin Nachtmann</li>
+            <li>Miroslav Sáraz</li>
+            <li>Marián Lekavý</li>
+          </ul>
+        </ul>
+        <li>dohodnutá zmena času stretnutí zo štvrtka na utorky o 10</li>
+        <li>opakované prompty:</li>
+        <ul>
+          <li>na backende - nový endpoint? možno stačí jeden, len v prvom prompte nebude história (treba zistiť)</li>
+          <li>frontend - poslať to čo už bolo poslané</li>
+          <li>musí zvládnuť aj request na rozdielnu súčiastku v druhom prompte</li>
+        </ul>
+        <h4>Práca do budúcna</h4>
+        <ul>
+          <li>treba spraviť benchmark koľko percent bolo úspešných z testovacích dát (štatistiku)</li>
+          <li>automatizovaný test, ktorý raz za čas spustíme a skontrolujeme úspešnosť</li>
+          <li>zatiaľ spraviť filtre na mosfety a ešte jeden typ</li>
+          <li>niekto prejde stránku, pozrie filtre a spíše čo sa, pri ktorej súčiastke dá filtrovať (min, max)</li>
         </ul>
       </div>
     </div>
 
     <div class="container-week">
-      <h2>Týždeň 6 (24.10.2023)</h2>
-      <h3>Online stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
-        </ul>
-        <li>frontend je pripojený na backend</li>
-        <li>backend hádže error, lebo ešte nie sú dorobené synonymá a entitné triedy</li>
-        <li>pracuje sa na synonym-managerovi</li>
-        <li>vedúcemu bolo cez online hovor zazdielané ako bude vyzerat synonym manager</li>
-        <li>nákres dataflowu v momentálnom riešení projektu</li>
-        <li>priradenie práce členom tímu v načrtnutom diagrame</li>
-        <li>prekonzultovanie licencie projektu</li>
-        <li>pridanie členov do novej MSTeams skupiny</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>spojazdnit synonymá a entitné triedy, spojazdniť backend bez errorov(31.10.2023)</li>
-        <li>dostať sa do bodu funkčného riešenia(31.10.2023)</li>
-        <li>prekresliť dataflow v riadnom programe(31.10.2023)</li>
-        <li>do licencie pridať všetky mená členov tímu(31.10.2023)</li>
-      </ul>
-    </div>
-
-    <div class="container-week">
-      <h2>Týždeň 7 (31.10.2023)</h2>
+      <h2>Stretnutie 1 (15.2.2024)</h2>
       <h3>Osobné stretnutie</h3>
       <ul>
         <li>Zúčastnili sa:</li>
@@ -256,229 +537,39 @@
           <li>Adam Kučmín</li>
           <li>Simona Zlatohlávková</li>
           <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
-        </ul>
-        <li>vedúcemu práce bola odprezentovaná práca za posledný týždeň</li>
-        <li>vedúci práce otestoval fungovanie programu cez frontendovú aplikáciu</li>
-        <li>boli dokončené entitné triedy pre všetky typy súčiastok</li>
-        <li>bol dokončený zoznam synoným pre súčiastky</li>
-        <li>bol prepojený frontend a backend</li>
-        <li>potrebná úprava aby sa dali vyhladávať parametre napr. "menšie ako", a nie len presné hodnoty</li>
-        <li>nastal problém, keď OpenAI vracia error 503</li>
-        <li>nastal problém, keď OpenAI vracia error 429, too many reQuests</li>
-        <li>namiesto image sensoru sme v odpovedi dostali IGBT, nakoľko nenašiel image sensor</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>audio amplifier nemá OPN, tabuľku bude treba odstrániť (7.11.2023)</li>
-        <li>namiesto ID co tam mame teraz, spravit to tak, aby vypisoval OPN cisla z DB</li>
-        <li>treba spravit logovanie aspon aby bolo vidiet ci spravne naparsoval product type a zadane atributy</li>
-        <li>vedúci práce doporučil neparsovať dáta do JSONu, ale priamo nechať openAI odpovedať JSONom (7.11.2023)</li>
-        <li>vedúci práce chce namiesto default odpovede IGBT dostať v odpovedi správu o nenájdení súčiastky</li>
-        <li>pridat dokumentaciu na stranku (7.11.2023)</li>
-        <li>pridat link na repozitar na stranku (7.11.2023)</li>
-        <li>pridat obrazky na stranku (7.11.2023)</li>
-        <li>bude treba opraviť to, aby druhý request na openAI api netrval moc dlho</li>
-        <li>rozdelit funkciu getResponse v GPTServiceImpl na viac casti aby nebola tak komplikovana</li>
-      </ul>
-      <h4>Dokumenty</h4>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-        data-whatever="Parsovanie Do JSON">Parsovanie Do JSON</button>
-    </div>
-
-    <div class="container-week">
-      <h2>Týždeň 8 (7.11.2023)</h2>
-      <h3>Osobné stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
-        </ul>
-        <li>bola odprezentovaná splnená práca za posledný týždeň</li>
-        <li>napr. pri filtri 5mpx by sme mohli vyhladávať 5 a viac mpx, nie menej</li>
-        <li>daľšia možnosť je zadať min hodnotu</li>
-        <li>odprezentovali sme ako program vyhľadáva v databáze</li>
-        <li>vedúci práce otestoval fungovanie programu cez frontendovú aplikáciu</li>
-        <li>číselné hodnoty treba vyhľadávať podľa databázy a nie podľa response od GPT</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>zistiť, či GPT-4 by nedokázal lepšie generovať JSON z requestu</li>
-        <li>zistiť, či GPT-4 je cenovo dostupná alternatíva</li>
-        <li>doplniť synonimický slovník aj pre atribút sic (silicone carbide) (21.11.2023)</li>
-        <li>opraviť bugy zistené pri testovaní aplikácie</li>
-        <li>upraviť funkciu getAttributesAsString() (21.11.2023)</li>
-        <li>pridať sa webstránku testovací JSON zo stretnutia (21.11.2023)</li>
-        <li>vytvoriť unit testy</li>
-      </ul>
-      <h4>Dokumenty</h4>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-        data-whatever="JSON">Príklad JSON</button>
-    </div>
-    
-    <div class="container-week">
-      <h2>Týždeň 9 (14.11.2023)</h2>
-      <h3>Osobné stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-        </ul>
-        <li>spravené synonymá pre silicone carbide</li>
-        <li>na stretnutí sme spustili a otestovali demo programu</li>
-        <li>openai api občas stále vráti error 502</li>
-        <li>zistili sme, že gpt-4-1106 by dokázal rýchlejšie a konzistentnejšie odpovedať JSONom vďaka funkcionalite json response</li>
-        <li>pri pokuse o update na gtp-4-1106 nastal problém s API kľúčom</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>pre správne fungovanie gpt-4-1106 bude pravdepodobne potrebné od vedúceho práce vyžiadať nový api kľúč</li>      
-        <li>pre vyriešenie tohto problému je treba urobiť ďalší výskum</li>
-        <li>rozdelenie backendu na jednotlivé moduly (21.11.2023)</li>
-      </ul>      
-    </div>
-
-    <div class="container-week">
-      <h2>Týždeň 10 (21.11.2023)</h2>
-      <h3>Osobné stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
-        </ul>
-        <li>vedúcemu práce bola odprezentovaná situácia s upgradom na gpt-4-1106, bol vyžiadaný nový api key</li>
-        <li>od vedúceho práce sme vyžiadali zoznam slov potrebných do synonymického slovníka, splniť to je však z časového hľadiska zatiaľ nereálne</li>
-        <li>vedúcemu práce bolo odprezentované, ako je backend rozdelený na moduly</li>
-        <li>vedúcemu práce bola odprezentovaná práca na dokumentácií k projektu</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>meno tabuľky by sa nemalo extrahovať v extractionservice, ale v querryservice</li>
-        <li>upraviť kontext gpt/request, podľa toho, čo bude lepšie</li>
-        <li>do dokumentácie pridať návrh UI</li>
-        <li>do dokumentácie pridať špecifikáciu => ako by projekt mal vyzerať/čo je cieľ projektu/čo má projekt obsahovať/prehľad, čo má projekt obsahovať</li>
-        <li>do dokumentácie pridať konkurenčné riešenia</li>
-        <li>keď chat nevie odpovedať, namiesto erroru odpovie, že danú súčiastku nevie vyhľadať</li>
-        <li>skontrolovať, či sú správne nastavené headers</li>
-        <li>vyhľadávať v JSON len na základe key</li>
-        <li>vyiešiť odsekávanie sql</li>
-      </ul>      
-    </div>
-
-    <div class="container-week">
-      <h2>Týždeň 11 (28.11.2023)</h2>
-      <h3>Osobné stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-        </ul>
-        <li>upravený kontext gpt</li>
-        <li>pracuje sa na odsekávaní sql</li>
-        <li>pri exception sa vypíše, že sa daná súčiastka nedá vyhľadať</li>
-        <li>GPT verzia updated na GPT 4 turbo</li>
-        <li>GPT využíva JSON mode pre lepšie štrukturovaný output, negeneruje zbytočný text</li>
-        <li>lepší výkon GPT 4 v porovnaní s GPT 3.5</li>
-        <li>meno tabuľky sa extrahuje naraz s menom komponentu, treba prekonzultovať s vedúcim projektu</li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>do dokumentácie pridať návrh UI</li>
-        <li>do dokumentácie pridať špecifikáciu => ako by projekt mal vyzerať/čo je cieľ projektu/čo má projekt obsahovať/prehľad, čo má projekt obsahovať</li>
-        <li>do dokumentácie pridať konkurenčné riešenia</li>
-        <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
-      </ul>
-    </div>
-
-    <div class="container-week">
-      <h2>Týždeň 12 (5.12.2023)</h2>
-      <h3>Osobné stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
-          <li>Miroslav Sáraz</li>
-          <li>Marián Lekavý</li>
-        </ul>
-        <li>vedúcemu práce sme odprezentovali splnené úlohy za posledný týždeň</li>
-        <li>prekonzultovali sme, prečo má extraction service poznať štruktúru databázy</li>
-        <li>vedúci práce preferuje, keby sme pouzili mapu atribútov namiesto cases</li>
-        <li>rýchlosť programu vyhovuje požiadavkam</li>
-        <li>počas testovania programu sme objavili niekoľko nedostatkov, ktoré treba upraviť</li>
-        <li></li>
-      </ul>
-      <h4>Práca do budúcna</h4>
-      <ul>
-        <li>pridať do logov vyextrahovane atributy (JSON)</li>
-        <li>pridať response gpt v prípade, že sa komponent nenájde</li>
-        <li>keď je viac requestov v 1 session, treba prepísať values parametra (key sa prepísal správne)</li>
-        <li>skontrolovať atribúty, ktoré posielame gpt (nemá obsahovať napr. status)</li>
-        <li>zatiaľ pridať Zener ako synonymum k Zener diode</li>
-        <li>je treba prerobiť synonymá tak, aby sa kontrolovalo synonymum pomocou contains</li>
-        <li>možné riešenie vyhľadávania je raz prejsť db. presne, ak nenájde match, prejsť s contains</li>
-        <li>vyskúšat dať gpt na výber hľadať z komponentov z onsemi db</li>
-        <li>optimalizovať dĺžku odpovede api aby zbytočne nevyčerpal zdroje</li>
-      </ul>
-      <h4>Na dokončenie projektu treba</h4>
-      <ul>
-        <li>Vyriešiť response gpt v prípade nenájdenej súčistky v databáze</li>
-        <li>bočný panel - úprava requestu</li>
-        <li>rozšíriť synonymický slovník</li>
-        <li>v power supplies sú topológie, tie treba pridať do synoným</li>        
-        <li>vytvoriť testovacie requesty</li>
-        <li>namiesto odpovede "component not found" - niečo ako "neviem čo je xy, skúste upresniť"</li>
-        <li>v prípade že nepozná xy, odpovedať v takom formáte, aký zadal používateľ</li>
-        <li>pri PIM je dropbox, z toho treba dať do synoným s tým, že tam musí byť aj modul (napr. mosfet modul)</li>
-        <li>to isté pri IPM, len tam nemá byť modul</li>
-        <li>pridať filtre na minimum a maximum hodnoty</li>
-      </ul>
-    </div>
-
-    <div class="container-week">
-      <h2>Stretnutie 13 (5.12.2023)</h2>
-      <h3>Osobné stretnutie</h3>
-      <ul>
-        <li>Zúčastnili sa:</li>
-        <ul>
-          <li>Adam Kučmín</li>
-          <li>Simona Zlatohlávková</li>
-          <li>Dagmar Trabalíková</li>
-          <li>Martin Nachtmann</li>
           <li>Miroslav Sáraz</li>
           <li>Marián Lekavý</li>
         </ul>
       </ul>
-      <li>Experimentovanie a vylepšovanie</li>
-      <h4>Na dokončenie projektu treba</h4>
+      <li>Adam spravil min max filtre na backende, filtrovanie funguje podľa toho</li>
+      <li>Miro spravil analýzu na filtre podľa onsemi stránky (ešte nejaké súčiastky chýbajú)</li>
+      <li>otestovali sme min max filtre na requeste "sic mosfet above 600V" a "sic mosfet 600V+" - fungovalo to správne
+      </li>
+      <li>momentálne ešte nevieme pracovať s tricky scenármi z mailu (zatiaľ nemusíme riešiť)</li>
+      <li>pri mosfet vcc max určujeme min a vcc min určujeme max, s tým si ešte nevieme dobre poradiť, niečo nájde, ale
+        nájde zle (možno pomôže premenovať filtre, nepoužívať min a max)</li>
+      <li>description nemusíme brať do úvahy</li>
+      <li>tricky scenár: fastest comparator = najnižší response (možno niekedy v budúcnosti to budeme vedieť spraviť)
+      </li>
+      <li>Sima opravila scrollovanie chatu keď je chat dlhší ako okno a pridala odosielanie histórie na frontende</li>
+      <li>Dada spravila analýzu ako implementovať históriu, bude chat chápať správne históriu pri zmene súčiastky?</li>
+      <li>Martin začal pracovať na testovaní scenárov z mailu.</li>
+      <h4>Práca do budúcna</h4>
       <ul>
-        <li>pridať filtre minimum, maximum čo umoznuje spravne fungovanie programu</li>
-        <li>porovnanie úspešnosti oproti starému stavu</li>
-        <li>Martin zorganizuje stretnutie/call v tyzdni od 08.01.2024</li>
+        <li>do synoným IPM a PIM pridať:</li>
+        <ul>
+          <li>PIM technology filter - za mosfet treba pridať modul</li>
+          <li>IPM topology filter
+          </li>
+        </ul>
+        <li>Adam dorobí min max na všetky súčiastky</li>
+        <li>Dada spraví históriu, posielať celú históriu, uvidíme či chat pochopí kontext ak sa zmení hľadaná súčiastka
+        </li>
+        <li>Miro dorobí endpoint na backende na min max filtre</li>
+        <li>nižšia priorita spraviť min max filtre na frontend do ľavého panela</li>
       </ul>
     </div>
+  </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
