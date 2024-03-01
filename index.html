@@ -470,7 +470,7 @@
       </div>
 
       <div class="container-week">
-        <h2>Stretnutie 13 (5.12.2023)</h2>
+        <h2>Týždeň 13 (5.12.2023)</h2>
         <h3>Osobné stretnutie</h3>
         <ul>
           <li>Zúčastnili sa:</li>
@@ -482,8 +482,8 @@
             <li>Miroslav Sáraz</li>
             <li>Marián Lekavý</li>
           </ul>
-        </ul>
-        <li>Experimentovanie a vylepšovanie</li>
+          <li>Experimentovanie a vylepšovanie</li>
+        </ul>        
         <h4>Na dokončenie projektu treba</h4>
         <ul>
           <li>pridať filtre minimum, maximum čo umožňuje správne fungovanie programu</li>
@@ -509,13 +509,13 @@
             <li>Miroslav Sáraz</li>
             <li>Marián Lekavý</li>
           </ul>
-        </ul>
-        <li>dohodnutá zmena času stretnutí zo štvrtka na utorky o 10</li>
-        <li>opakované prompty:</li>
-        <ul>
-          <li>na backende - nový endpoint? možno stačí jeden, len v prvom prompte nebude história (treba zistiť)</li>
-          <li>frontend - poslať to čo už bolo poslané</li>
-          <li>musí zvládnuť aj request na rozdielnu súčiastku v druhom prompte</li>
+          <li>dohodnutá zmena času stretnutí zo štvrtka na utorky o 10</li>
+          <li>opakované prompty:</li>
+          <ul>
+            <li>na backende - nový endpoint? možno stačí jeden, len v prvom prompte nebude história (treba zistiť)</li>
+            <li>frontend - poslať to čo už bolo poslané</li>
+            <li>musí zvládnuť aj request na rozdielnu súčiastku v druhom prompte</li>
+          </ul>
         </ul>
         <h4>Práca do budúcna</h4>
         <ul>
@@ -539,20 +539,24 @@
           <li>Miroslav Sáraz</li>
           <li>Marián Lekavý</li>
         </ul>
+
+        <li>Adam spravil min max filtre na backende, filtrovanie funguje podľa toho</li>
+        <li>Miro spravil analýzu na filtre podľa onsemi stránky (ešte nejaké súčiastky chýbajú)</li>
+        <li>otestovali sme min max filtre na requeste "sic mosfet above 600V" a "sic mosfet 600V+" - fungovalo to
+          správne
+        </li>
+        <li>momentálne ešte nevieme pracovať s tricky scenármi z mailu (zatiaľ nemusíme riešiť)</li>
+        <li>pri mosfet vcc max určujeme min a vcc min určujeme max, s tým si ešte nevieme dobre poradiť, niečo nájde,
+          ale
+          nájde zle (možno pomôže premenovať filtre, nepoužívať min a max)</li>
+        <li>description nemusíme brať do úvahy</li>
+        <li>tricky scenár: fastest comparator = najnižší response (možno niekedy v budúcnosti to budeme vedieť spraviť)
+        </li>
+        <li>Sima opravila scrollovanie chatu keď je chat dlhší ako okno a pridala odosielanie histórie na frontende</li>
+        <li>Dada spravila analýzu ako implementovať históriu, bude chat chápať správne históriu pri zmene súčiastky?
+        </li>
+        <li>Martin začal pracovať na testovaní scenárov z mailu.</li>
       </ul>
-      <li>Adam spravil min max filtre na backende, filtrovanie funguje podľa toho</li>
-      <li>Miro spravil analýzu na filtre podľa onsemi stránky (ešte nejaké súčiastky chýbajú)</li>
-      <li>otestovali sme min max filtre na requeste "sic mosfet above 600V" a "sic mosfet 600V+" - fungovalo to správne
-      </li>
-      <li>momentálne ešte nevieme pracovať s tricky scenármi z mailu (zatiaľ nemusíme riešiť)</li>
-      <li>pri mosfet vcc max určujeme min a vcc min určujeme max, s tým si ešte nevieme dobre poradiť, niečo nájde, ale
-        nájde zle (možno pomôže premenovať filtre, nepoužívať min a max)</li>
-      <li>description nemusíme brať do úvahy</li>
-      <li>tricky scenár: fastest comparator = najnižší response (možno niekedy v budúcnosti to budeme vedieť spraviť)
-      </li>
-      <li>Sima opravila scrollovanie chatu keď je chat dlhší ako okno a pridala odosielanie histórie na frontende</li>
-      <li>Dada spravila analýzu ako implementovať históriu, bude chat chápať správne históriu pri zmene súčiastky?</li>
-      <li>Martin začal pracovať na testovaní scenárov z mailu.</li>
       <h4>Práca do budúcna</h4>
       <ul>
         <li>do synoným IPM a PIM pridať:</li>
