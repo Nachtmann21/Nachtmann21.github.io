@@ -483,7 +483,7 @@
             <li>Marián Lekavý</li>
           </ul>
           <li>Experimentovanie a vylepšovanie</li>
-        </ul>        
+        </ul>
         <h4>Na dokončenie projektu treba</h4>
         <ul>
           <li>pridať filtre minimum, maximum čo umožňuje správne fungovanie programu</li>
@@ -595,7 +595,7 @@
       <li>Adam spraví to, že dáme do chatu súčiastky, ktoré máme, a chat ich namapuje</li>
       <li>tým pádom tam možno nebude ani prvý synonymický slovník/li>
       <li>Dada do histórie pridala to, aby "family name" bolo iba jedno slovo, aby to chat nedával do zoznamu</li>
-      <h4>Práca do budúcnosti</h4>
+      <h4>Práca do budúcna</h4>
       <ul>
         <li>testovanie</li>
         <li>treba opraviť min/max, ktoré chat zamieňa</li>
@@ -605,7 +605,64 @@
         <li>odosielanie zmien filtrov v histórii</li>
         <li>pozrieť sa na volanie funkcií - https://platform.openai.com/docs/guides/function-calling</li>
       </ul>
+    </div>
 
+    <div class="container-week">
+      <h2>Stretnutie 4 (5.3.2024)</h2>
+      <h3>Osobné stretnutie</h3>
+      <ul>
+        <li>Zúčastnili sa:</li>
+        <ul>
+          <li>Adam Kučmín</li>
+          <li>Simona Zlatohlávková</li>
+          <li>Dagmar Trabalíková</li>
+          <li>Miroslav Sáraz</li>
+          <li>Martin Nachtmann</li>
+          <li>Marián Lekavý</li>
+        </ul>
+      </ul>
+      <li>chat pri extrakcii komponent family type posielame list dostupnych suciastok</li>
+      <li>vdaka tomuto "Component xy not found" returnuje len vtedy, ked komponent skutocne neexistuje</li>
+      <li>chatovi sa uz posiela aj historia</li>
+      <li>zistit, preco chat niekedy hlasi problem s openAI</li>
+      <li>opravene filtre, aby brali do uvahy tabulku a nie komponent</li>
+      <h4>Práca do budúcna</h4>
+      <ul>
+        <li>refaktor kodu, vymazat zbytocne console logs</li>
+        <li>unchecked checkboxy by sa nemali posielat na BE</li>
+        <li>mergnut vsetky potrebne vetvy</li>
+        <li>vela testovania</li>
+        <li>potrebujeme aby sa poslala chybova odpoved od chata</li>
+        <li>skontorlovat, ci nepomoze posielat requesty bez medzier na zaciatku requestu</li>
+      </ul>
+    </div>
+
+    <div class="container-week">
+      <h2>Stretnutie 5 (12.3.2024)</h2>
+      <h3>Osobné stretnutie</h3>
+      <ul>
+        <li>Zúčastnili sa:</li>
+        <ul>
+          <li>Adam Kučmín</li>
+          <li>Simona Zlatohlávková</li>
+          <li>Dagmar Trabalíková</li>
+          <li>Miroslav Sáraz</li>
+          <li>Martin Nachtmann</li>
+        </ul>
+      </ul>  
+      <li>Adam a Martin zacali refaktor kódu</li>
+      <li>Dagmar robi na </li>    
+      <li>Sima upravila checkboxy aby sa unchecked checkboxy neposielali na backend</li>
+      <li>pokracujeme v testovani apliakcie</li>
+      <li>posielanie requestov bez medzier pomohlo chatovi, aby nehadzal error</li>
+      <h4>Práca do budúcna</h4>
+      <ul>
+        <li>refaktor kódu</li>
+        <li>mergnut všetky potrebné vetvy</li>
+        <li>potrebujeme aby sa poslala chybová odpoveď od chata</li>
+        <li>po pretestovani prerobiť synonymá</li>
+        <li>pridat uvodzovky do histórie</li>
+      </ul>
     </div>
   </div>
   </div>
