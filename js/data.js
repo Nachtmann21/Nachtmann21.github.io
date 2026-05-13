@@ -61,22 +61,6 @@ const sections = {
       desc: "Retinal vessel segmentation and identity verification using U-Net, LW-Net, and Siamese networks.",
       image: "images/research/result_stare.png",
       link: "research/retinal-biometric-recognition.html"
-    },
-    {
-      type: "Research",
-      title: "Research Topic",
-      tags: ["Graphics"],
-      desc: "Rendering and visual experiments.",
-      image: "https://picsum.photos/600/400?random=10",
-      link: "#"
-    },
-    {
-      type: "Research",
-      title: "Research Topic",
-      tags: ["Backend"],
-      desc: "Architecture and API exploration.",
-      image: "https://picsum.photos/600/400?random=11",
-      link: "#"
     }
   ]
 };
