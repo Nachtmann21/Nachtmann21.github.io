@@ -1,8 +1,8 @@
-.paper-hero {
+.detail-hero {
   margin-bottom: 40px;
 }
 
-.paper-title {
+.detail-title {
   font-family: 'Poppins-Medium', sans-serif;
 
   font-size: clamp(2rem, 5vw, 4rem);
@@ -13,7 +13,7 @@
   margin-bottom: 20px;
 }
 
-.paper-actions {
+.detail-actions {
   display: flex;
   gap: 12px;
 
@@ -22,7 +22,7 @@
   flex-wrap: wrap;
 }
 
-.paper-actions a {
+.detail-actions a {
   color: #c4b5fd;
   text-decoration: none;
 
@@ -38,7 +38,7 @@
   transition: all 0.25s ease;
 }
 
-.paper-actions a:hover {
+.detail-actions a:hover {
   border-color: rgba(196, 181, 253, 0.45);
 
   transform: translateY(-2px);
@@ -56,4 +56,21 @@
   border-radius: 14px;
 
   background: #111;
+}
+
+.project-media {
+  width: 100%;
+  overflow: hidden;
+
+  border-radius: 14px;
+  border: 1px solid #1f1f1f;
+
+  background: #101010;
+}
+
+.project-media img {
+  width: 100%;
+  display: block;
+
+  object-fit: cover;
 }
