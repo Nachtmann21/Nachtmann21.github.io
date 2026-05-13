@@ -1,51 +1,42 @@
-$('#exampleModal').on('show.bs.modal', function (event) {
-  var modal = $(this);
-  var button = $(event.relatedTarget);
-  var recipient = button.data('whatever');
-  var recipientImage = '';
-  var recipientContent = '';
+const projects = [
+  {
+    title: "Slay the Spire Clone",
+    tags: ["Unity", "C#"],
+    desc: "Card-based roguelike prototype with procedural encounters.",
+    link: "https://github.com/yourusername/slay-the-spire-clone"
+  },
+  {
+    title: "Profile Thrower",
+    tags: ["Unity", "WebGL"],
+    desc: "Physics-based profile launching game. Pure chaos.",
+    link: "https://github.com/yourusername/profile-thrower"
+  },
+  {
+    title: "Task Manager API",
+    tags: ["Java", "Spring Boot", "PostgreSQL"],
+    desc: "REST API for task management with auth and role-based access.",
+    link: "https://github.com/yourusername/task-manager-api"
+  },
+  {
+    title: "Magic Mouse Trailer",
+    tags: ["JS", "Canvas"],
+    desc: "Interactive mouse trail effect with particles.",
+    link: "https://github.com/yourusername/magic-mouse"
+  },
+];
 
-  if (recipient === 'JSON') {
-    var jsonData = {
-      "Price": "$2.50",
-      "Configuration": "Single",
-      "V(BR)DSS Min (V)": "900",
-      "RDS(on) @ VGS = 10 V (mΩ)†": "0.05",
-      "ID Max (A)": "100",
-      "Qg @ VGS = 10 V (nC)†": "50",
-      "VGS Max (V)": "20",
-      "Technology": "MOSFET",
-      "Package Type": "TO-220",
-      "Ciss Typ (pF)": "1000",
-      "VGS(th) Max (V)": "5",
-      "PD Max (W)": "150",
-      "RDS(on) Max @ VGS = 2.5 V  (mΩ)": "0.1",
-      "RDS(on) Max @ VGS = 4.5 V  (mΩ)": "0.08",
-      "Qg Typ @ VGS = 4.5 V (nC)": "40",
-      "Coss Typ (pF)": "500",
-      "Crss Typ (pF)": "200",
-      "Qgd Typ @ VGS = 4.5 V (nC)": "30",
-      "Qrr Typ (nC)": "10",
-      "Qualification": "Automotive",
-      "Tj Max (°C)": "150",
-      "AEC Qualified": true,
-      "PPAP Capable": true,
-      "Halide Free": true,
-      "Lead Free": true,
-      "Status": "Active"
-    };
+const grid = document.getElementById('project-grid');
 
-    recipientImage = '';
-    recipientContent = '<pre>' + JSON.stringify(jsonData, null, 2) + '</pre>';
-  } else if (recipient === 'Diagram1') {
-    recipientContent = '<img id="recipient-image" src="../images/diagram1.jpg" alt="Diagram 1 class="img-fluid"">';
-  } else if (recipient === 'Diagram2') {
-    recipientContent = '<img id="recipient-image" src="../images/diagram2.jpg" alt="Diagram 2" class="img-fluid">';
-  } else if (recipient === 'Parsovanie Do JSON') {
-    recipientContent = '<img id="recipient-image" src="../images/parsovanieDoJSON.jpg" alt="Parsovanie Do JSON" class="img-fluid">';
-  }
-
-  modal.find('.modal-title').text(recipient);
-  modal.find('.modal-body').html(recipientContent);
-  modal.find('.modal-body input').val(recipient);
+projects.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.onclick = () => window.open(p.link, '_blank');
+  
+  card.innerHTML = `
+    <h3>${p.title}</h3>
+    <p class="desc">${p.desc}</p>
+    <div>${p.tags.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+  `;
+  
+  grid.appendChild(card);
 });
