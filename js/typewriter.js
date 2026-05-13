@@ -4,35 +4,45 @@ const bioLines = [
   "A place for creative code, technical experiments, and unfinished thoughts."
 ];
 
-const typedBio = document.getElementById("typed-bio");
+/**
+ * Starts the bio typewriter animation loop.
+ */
+function initTypewriter() {
+  const typedBio = document.getElementById("typed-bio");
 
-let lineIndex = 0;
-let charIndex = 0;
-let deleting = false;
+  if (!typedBio) return;
 
-function typeBio() {
-  const currentLine = bioLines[lineIndex];
+  let lineIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
 
-  if (!deleting) {
-    typedBio.textContent = currentLine.slice(0, charIndex + 1);
-    charIndex++;
+  /**
+   * Types out the next character in the bio text.
+   */
+  function typeBio() {
+    const currentLine = bioLines[lineIndex];
 
-    if (charIndex === currentLine.length) {
-      deleting = true;
-      setTimeout(typeBio, 7000);
-      return;
+    if (!deleting) {
+      typedBio.textContent = currentLine.slice(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentLine.length) {
+        deleting = true;
+        setTimeout(typeBio, 7000);
+        return;
+      }
+    } else {
+      typedBio.textContent = currentLine.slice(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        deleting = false;
+        lineIndex = (lineIndex + 1) % bioLines.length;
+      }
     }
-  } else {
-    typedBio.textContent = currentLine.slice(0, charIndex - 1);
-    charIndex--;
 
-    if (charIndex === 0) {
-      deleting = false;
-      lineIndex = (lineIndex + 1) % bioLines.length;
-    }
+    setTimeout(typeBio, deleting ? 28 : 42);
   }
 
-  setTimeout(typeBio, deleting ? 28 : 42);
+  typeBio();
 }
-
-typeBio();
