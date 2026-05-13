@@ -20,13 +20,6 @@ const sections = {
       desc: "Short description of the project goes here.",
       image: "https://picsum.photos/600/400?random=3",
       link: "#"
-    },
-    {
-      title: "Project Name",
-      tags: ["Python", "Flask"],
-      desc: "Short description of the project goes here.",
-      image: "https://picsum.photos/600/400?random=4",
-      link: "#"
     }
   ],
 
@@ -51,13 +44,6 @@ const sections = {
       desc: "Creative coding experiment.",
       image: "https://picsum.photos/600/400?random=7",
       link: "#"
-    },
-    {
-      title: "Snippet Name",
-      tags: ["UI"],
-      desc: "Interesting visual interface concept.",
-      image: "https://picsum.photos/600/400?random=8",
-      link: "#"
     }
   ],
 
@@ -81,13 +67,6 @@ const sections = {
       tags: ["Backend"],
       desc: "Architecture and API exploration.",
       image: "https://picsum.photos/600/400?random=11",
-      link: "#"
-    },
-    {
-      title: "Research Topic",
-      tags: ["Game Dev"],
-      desc: "Gameplay systems and mechanics research.",
-      image: "https://picsum.photos/600/400?random=12",
       link: "#"
     }
   ]
