@@ -1,0 +1,165 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(20, 20, 20, 0.92);
+
+  border: 1px solid #1f1f1f;
+  border-radius: 12px;
+
+  padding: 14px;
+
+  position: relative;
+  overflow: hidden;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(8px);
+
+  transition: all 0.3s ease;
+}
+
+.card::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 12px;
+  right: 12px;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(167, 139, 250, 0.45),
+    transparent
+  );
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  border-color: rgba(167, 139, 250, 0.32);
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 30px rgba(167, 139, 250, 0.08);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+  margin-bottom: 18px;
+
+  background: #101010;
+  border: 1px solid #202020;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center 42%;
+
+  opacity: 0.9;
+
+  filter: brightness(1.05);
+
+  transition:
+    transform 0.5s ease,
+    opacity 0.3s ease,
+    filter 0.3s ease;
+}
+
+.card:hover .card-image img {
+  transform: scale(1.04);
+
+  opacity: 1;
+
+  filter:
+    brightness(1.12)
+    drop-shadow(0 0 18px rgba(196, 181, 253, 0.12));
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-type {
+  font-family: 'Poppins-Medium', sans-serif;
+
+  font-size: 0.65rem;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  color: #a78bfa;
+
+  margin-bottom: 10px;
+
+  opacity: 0.8;
+}
+
+.card h3 {
+  font-family: 'Poppins-Medium', sans-serif;
+
+  font-size: 1rem;
+  line-height: 1.2;
+
+  color: #fff;
+
+  margin-bottom: 6px;
+}
+
+.card .desc {
+  font-size: 0.8rem;
+  line-height: 1.5;
+
+  color: #777;
+
+  margin-top: 8px;
+
+  max-width: 94%;
+}
+
+.tags {
+  margin-top: 12px;
+}
+
+.card .tag {
+  display: inline-block;
+
+  font-size: 0.7rem;
+  color: #aaa;
+
+  background: rgba(196, 181, 253, 0.06);
+  border: 1px solid rgba(196, 181, 253, 0.08);
+
+  padding: 3px 8px;
+
+  border-radius: 4px;
+
+  margin-right: 4px;
+  margin-top: 6px;
+}
+
+@media (max-width: 640px) {
+  .card-image {
+    height: 160px;
+  }
+}

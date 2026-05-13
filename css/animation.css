@@ -1,0 +1,16 @@
+.cursor {
+  color: #c4b5fd;
+  margin-left: 2px;
+
+  animation: cursor-blink 1.2s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
