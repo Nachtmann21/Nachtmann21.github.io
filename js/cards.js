@@ -1,5 +1,5 @@
 /**
- * Creates a project card element.
+ * Creates a card element.
  *
  * @param {Object} item - Card data.
  * @returns {HTMLElement}
@@ -14,6 +14,7 @@ function createCard(item) {
     </div>
 
     <div class="card-content">
+      <p class="card-type">${item.type || "Item"}</p>
       <h3>${item.title}</h3>
       <p class="desc">${item.desc}</p>
 
@@ -25,19 +26,18 @@ function createCard(item) {
 
   card.addEventListener("click", () => {
     if (item.link && item.link !== "#") {
-      window.open(item.link, "_blank");
+      window.open(item.link, "_self");
     }
   });
 
   return card;
 }
 
-
 /**
- * Renders a section of cards into the specified grid container.
+ * Renders cards into the specified grid container.
  *
- * @param {string} sectionId - The ID of the target grid container.
- * @param {Object[]} items - Array of card data objects to render.s
+ * @param {string} sectionId - Target grid ID.
+ * @param {Object[]} items - Card data objects.
  */
 function renderSection(sectionId, items) {
   const grid = document.getElementById(sectionId);

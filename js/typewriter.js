@@ -16,9 +16,6 @@ function initTypewriter() {
   let charIndex = 0;
   let deleting = false;
 
-  /**
-   * Types out the next character in the bio text.
-   */
   function typeBio() {
     const currentLine = bioLines[lineIndex];
 

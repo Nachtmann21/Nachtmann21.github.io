@@ -1,6 +1,7 @@
 const sections = {
   projects: [
     {
+      type: "Project",
       title: "Project Name",
       tags: ["Java", "Spring Boot", "PostgreSQL"],
       desc: "Short description of the project goes here.",
@@ -8,6 +9,7 @@ const sections = {
       link: "#"
     },
     {
+      type: "Project",
       title: "Project Name",
       tags: ["Unity", "C#"],
       desc: "Short description of the project goes here.",
@@ -15,6 +17,7 @@ const sections = {
       link: "#"
     },
     {
+      type: "Project",
       title: "Project Name",
       tags: ["React", "Node.js"],
       desc: "Short description of the project goes here.",
@@ -25,6 +28,7 @@ const sections = {
 
   snippets: [
     {
+      type: "Snippet",
       title: "Snippet Name",
       tags: ["JavaScript"],
       desc: "Small reusable UI or animation snippet.",
@@ -32,6 +36,7 @@ const sections = {
       link: "#"
     },
     {
+      type: "Snippet",
       title: "Snippet Name",
       tags: ["CSS"],
       desc: "Interactive hover or layout effect.",
@@ -39,6 +44,7 @@ const sections = {
       link: "#"
     },
     {
+      type: "Snippet",
       title: "Snippet Name",
       tags: ["Canvas"],
       desc: "Creative coding experiment.",
@@ -49,13 +55,15 @@ const sections = {
 
   research: [
     {
-      title: "Research Topic",
-      tags: ["AI", "Systems"],
-      desc: "Notes and experiments around interesting topics.",
-      image: "https://picsum.photos/600/400?random=9",
-      link: "#"
+      type: "Research Paper",
+      title: "Retinal Biometric Recognition",
+      tags: ["Python", "Deep Learning", "Biometrics"],
+      desc: "Retinal vessel segmentation and identity verification using U-Net, LW-Net, and Siamese networks.",
+      image: "images/research/result_stare.png",
+      link: "research/retinal-biometric-recognition.html"
     },
     {
+      type: "Research",
       title: "Research Topic",
       tags: ["Graphics"],
       desc: "Rendering and visual experiments.",
@@ -63,6 +71,7 @@ const sections = {
       link: "#"
     },
     {
+      type: "Research",
       title: "Research Topic",
       tags: ["Backend"],
       desc: "Architecture and API exploration.",
