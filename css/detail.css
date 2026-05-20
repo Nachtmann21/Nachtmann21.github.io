@@ -74,3 +74,65 @@
 
   object-fit: cover;
 }
+
+.project-media video {
+  width: 100%;
+  display: block;
+
+  border-radius: 14px;
+
+  object-fit: cover;
+}
+
+.tag {
+  display: inline-block;
+
+  font-size: 0.7rem;
+  color: #aaa;
+
+  background: rgba(196, 181, 253, 0.06);
+  border: 1px solid rgba(196, 181, 253, 0.08);
+
+  padding: 3px 8px;
+
+  border-radius: 4px;
+
+  margin-right: 4px;
+  margin-top: 6px;
+}
+
+.dataset-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin-top: 24px;
+}
+
+.dataset-grid .project-media img {
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .dataset-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail-divider {
+  width: 100%;
+  height: 1px;
+
+  margin-top: 40px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+}

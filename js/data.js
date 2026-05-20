@@ -5,7 +5,7 @@ const sections = {
             title: "YOLOv8 Detection Pipeline",
             tags: ["Python", "YOLOv8", "OpenCV", "PyTorch"],
             desc: "Custom-trained real-time object detection system using gameplay screenshots and automated interaction logic.",
-            image: "images/projects/yolov8-project.jpg",
+            image: "images/projects/yolov8_thumbnail.jpg",
             link: "projects/yolov8-detection-pipeline.html"
         },
         {

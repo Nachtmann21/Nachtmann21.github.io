@@ -2,109 +2,165 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>YOLOv8 Detection Pipeline — Nachtmann</title>
+    <title>YOLOv8 Detection Pipeline — Nachtmann</title>
 
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css/cards.css">
-  <link rel="stylesheet" href="../css/animations.css">
-  <link rel="stylesheet" href="../css/detail.css">
-  <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/cards.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
 
-  <nav class="topbar">
-    <a href="../index.html" class="brand">{ NACHTMANN }</a>
-  </nav>
+    <nav class="topbar">
+        <a href="../index.html" class="brand">{ NACHTMANN }</a>
+    </nav>
 
-  <div class="container">
+    <div class="container">
 
-    <header class="hero detail-hero">
-      <p class="card-type">Computer Vision Project</p>
+        <header class="hero detail-hero">
 
-      <h1 class="detail-title">
-        YOLOv8 Detection Pipeline
-      </h1>
+            <p class="card-type">
+                Computer Vision Project
+            </p>
 
-      <p class="bio">
-        Custom-trained real-time object detection system using gameplay screenshots and automated interaction logic.
-      </p>
+            <h1 class="detail-title">
+                YOLOv8 Detection Pipeline
+            </h1>
 
-      <div class="detail-actions">
-        <a href="https://github.com/Nachtmann21/YoloV8" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
+            <p class="bio">
+                A real-time computer vision experiment using YOLOv8 to detect cows from RuneLite gameplay screenshots.
+                The system captures the game window, runs object detection, displays annotated predictions, and can
+                target
+                the nearest detected cow through automated click logic.
+            </p>
 
-        <a href="../index.html">
-          Back Home
-        </a>
-      </div>
-    </header>
+            <div class="detail-actions">
 
-    <section class="section">
-      <h2>Overview</h2>
-      <p class="bio">
-        This project explores real-time computer vision using a YOLOv8 model trained on a custom dataset.
-        The system detects target objects from screenshots and uses detection results for automated interaction.
-      </p>
-    </section>
+                <a href="https://github.com/Nachtmann21/YoloV8" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
 
-    <section class="section">
-      <h2>Demo</h2>
-      <div class="project-media">
-        <img src="../images/projects/yolov8-demo.gif" alt="YOLOv8 detection demo placeholder">
-      </div>
-    </section>
+                <a href="https://universe.roboflow.com/annotations-borne/osrs_cows-jn5fz/dataset/2" target="_blank"
+                    rel="noopener noreferrer">
+                    Roboflow Dataset
+                </a>
 
-    <section class="section">
-      <h2>Detection Preview</h2>
-      <div class="project-media">
-        <img src="../images/projects/yolov8-detection.jpg" alt="YOLOv8 detection preview placeholder">
-      </div>
-    </section>
+                <a href="../index.html">
+                    Back Home
+                </a>
 
-    <section class="section">
-      <h2>Dataset</h2>
+            </div>
 
-      <p class="bio">
-        The model was trained using custom screenshots collected from gameplay footage.
-        Images were manually labeled to teach the model how to detect specific in-game entities.
-      </p>
+        </header>
 
-      <div class="project-media">
-        <img src="../images/projects/yolov8-dataset.jpg" alt="Dataset annotation placeholder">
-      </div>
-    </section>
+        <div class="detail-divider"></div>
 
-    <section class="section">
-      <h2>Technologies</h2>
+        <section class="section">
 
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">YOLOv8</span>
-        <span class="tag">OpenCV</span>
-        <span class="tag">PyTorch</span>
-        <span class="tag">Computer Vision</span>
-      </div>
-    </section>
+            <h2>Overview</h2>
 
-    <footer>
-      <div class="footer-icons">
-        <a href="https://github.com/Nachtmann21" target="_blank" class="icon-link">GH</a>
-        <a href="mailto:matonachtmann@gmail.com" class="icon-link">@</a>
-        <a href="https://youtube.com/" target="_blank" class="icon-link">YT</a>
-      </div>
+            <p class="bio">
+                The project uses a custom-trained YOLOv8 model to perform real-time object detection on live gameplay.
+                A multiprocessing pipeline handles frame capture, inference, display rendering, and automated
+                interaction
+                independently for improved responsiveness and performance.
+            </p>
 
-      <p class="footer-copy">
-        © 2026 Nachtmann
-      </p>
-    </footer>
+        </section>
 
-  </div>
+        <section class="section">
+
+            <h2>Demo</h2>
+
+            <div class="project-media">
+
+                <video autoplay muted loop playsinline>
+
+                    <source src="../videos/projects/yolov8-demo.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Dataset</h2>
+
+            <p class="bio">
+                The model was trained on a custom Roboflow dataset containing 402 annotated gameplay screenshots,
+                split into 282 training images, 80 validation images, and 40 test images.
+                Images were resized to 640×640 and manually labeled for cow detection.
+            </p>
+
+            <div class="dataset-grid">
+
+                <div class="project-media">
+                    <img src="../images/projects/dataset_01.png" alt="Annotated gameplay dataset example">
+                </div>
+
+                <div class="project-media">
+                    <img src="../images/projects/dataset_02.png" alt="Annotated gameplay dataset example">
+                </div>
+
+                <div class="project-media">
+                    <img src="../images/projects/dataset_03.png" alt="Annotated gameplay dataset example">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2>Technologies</h2>
+
+            <div class="tags">
+
+                <span class="tag">Python</span>
+                <span class="tag">YOLOv8</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Roboflow</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Multiprocessing</span>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="footer-icons">
+
+                <a href="https://github.com/Nachtmann21" target="_blank" class="icon-link">
+                    GH
+                </a>
+
+                <a href="mailto:matonachtmann@gmail.com" class="icon-link">
+                    @
+                </a>
+
+                <a href="https://youtube.com/" target="_blank" class="icon-link">
+                    YT
+                </a>
+
+            </div>
+
+            <p class="footer-copy">
+                © 2026 Nachtmann
+            </p>
+
+        </footer>
+
+    </div>
 
 </body>
 
